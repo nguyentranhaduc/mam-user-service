@@ -7,5 +7,5 @@ spec:
     app: mam-user-service
   ports:
     - port: 3000
-      nodePort: 30080
+      nodePort: 30081
   type: NodePort
