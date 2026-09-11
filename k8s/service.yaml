@@ -6,6 +6,6 @@ spec:
   selector:
     app: mam-user-service
   ports:
-    - port: 5000
-      targetPort: 5000
-  type: ClusterIP
+    - port: 3000
+      nodePort: 30080
+  type: NodePort
