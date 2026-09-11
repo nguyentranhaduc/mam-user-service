@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mam-user-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mam-user-service
+  template:
+    metadata:
+      labels:
+        app: mam-user-service
+    spec:
+      containers:
+        - name: mam-user-service
+          image: nguyentranhaduc/mam-user-service:latest
+          ports:
+            - containerPort: 5000
