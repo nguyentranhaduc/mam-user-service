@@ -28,12 +28,11 @@ async function main() {
   });
 }
 
-main()
-  .then(async () => {
-    await prisma.$disconnect();
-  })
-  .catch(async (error) => {
-    console.error(error);
-    await prisma.$disconnect();
-    process.exit(1);
-  });
+try {
+  await main();
+  await prisma.$disconnect();
+} catch (err) {
+  console.error(err);
+  await prisma.$disconnect();
+  process.exit(1);
+}

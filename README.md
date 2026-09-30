@@ -4,5 +4,5 @@
 
 ```
 npx prisma migrate dev --name init
-npx tsx prisma/seed.ts
+npx tsx prisma/seed.dev.ts
 ```
