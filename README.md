@@ -28,19 +28,16 @@ The service follows a Clean Architecture structure:
 
 ```text
 src/
-├── domain/
-│   ├── entities/
-│   └── repositories/
+├── users/
+│   └── v1/
+│       ├── domain/
+│       ├── application/
+│       └── infrastructure/
 │
-├── application/
-│   └── use-cases/
+├── prisma/
+│   └── ...
 │
-├── infrastructure/
-│   ├── database/
-│   │   └── prisma/
-│   └── crypto/
-│
-└── v1/
+└── app.module.ts
 ```
 
 ## Database
