@@ -4,6 +4,24 @@ A production-oriented **User Microservice** built with **NestJS**, **TypeScript*
 
 The project focuses on applying Clean Architecture principles to a real-world microservice, with a strong separation between **Domain**, **Application**, and **Infrastructure** layers. NestJS Dependency Injection is used to connect abstractions with their concrete implementations while keeping business logic independent from infrastructure concerns.
 
+### Main principles
+
+* **Domain** — Contains business entities and repository abstractions.
+* **Application** — Contains use cases and application-level orchestration.
+* **Infrastructure** — Contains implementations for external concerns such as PostgreSQL, Prisma, and password hashing.
+* **Dependency Inversion** — Application and Domain depend on abstractions rather than concrete infrastructure implementations.
+* **Dependency Injection** — NestJS DI connects interfaces/tokens with their concrete implementations.
+
+## Tech Stack
+
+* **NestJS**
+* **TypeScript**
+* **Prisma ORM**
+* **PostgreSQL**
+* **Clean Architecture**
+* **Dependency Injection**
+* **Docker** *(planned / optional)*
+
 ## Architecture
 
 The service follows a Clean Architecture structure:
@@ -24,24 +42,6 @@ src/
 │
 └── v1/
 ```
-
-### Main principles
-
-* **Domain** — Contains business entities and repository abstractions.
-* **Application** — Contains use cases and application-level orchestration.
-* **Infrastructure** — Contains implementations for external concerns such as PostgreSQL, Prisma, and password hashing.
-* **Dependency Inversion** — Application and Domain depend on abstractions rather than concrete infrastructure implementations.
-* **Dependency Injection** — NestJS DI connects interfaces/tokens with their concrete implementations.
-
-## Tech Stack
-
-* **NestJS**
-* **TypeScript**
-* **Prisma ORM**
-* **PostgreSQL**
-* **Clean Architecture**
-* **Dependency Injection**
-* **Docker** *(planned / optional)*
 
 ## Database
 
