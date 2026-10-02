@@ -67,7 +67,7 @@ npm install
 Create a `.env` file and configure the PostgreSQL connection:
 
 ```env
-DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/DATABASE_NAME"
+DATABASE_URL="postgresql://USER:PASSWORD@localhost:PORT/DATABASE_NAME"
 ```
 
 ### Generate Prisma Client
