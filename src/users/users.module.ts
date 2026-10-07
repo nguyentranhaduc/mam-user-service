@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { UsersController } from './v1/users.controller.js';
+import { UsersController } from './v1/presentation/users.controller.js';
 import { PrismaModule } from '../prisma/prisma.module.js';
 import { PrismaUserRepository } from './v1/infrastructure/database/prisma/prisma-user-repository.infra.js';
 import { PASSWORD_HASHER, USER_REPOSITORY } from './v1/tokens.js';
