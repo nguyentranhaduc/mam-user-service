@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { PasswordHasherInterface } from '../../application/password-hasher.interface.js';
+import { PasswordHasherInterface } from '../../application/interfaces/password-hasher.interface.js';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()

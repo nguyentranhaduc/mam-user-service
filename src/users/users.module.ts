@@ -7,7 +7,7 @@ import { BcryptPasswordHasher } from './v1/infrastructure/password-hasher/bcrypt
 import { CreateUserUseCase } from './v1/application/use-cases/create-user/create-user.use-case.js';
 import { GetUserDetailByIdUseCase } from './v1/application/use-cases/get-user-detail-by-id/get-user-detail-by-id.use-case.js';
 import { UserRepositoryInterface } from './v1/domain/repositories/user.repository.interface.js';
-import { PasswordHasherInterface } from './v1/application/password-hasher.interface.js';
+import { PasswordHasherInterface } from './v1/application/interfaces/password-hasher.interface.js';
 
 @Module({
   imports: [PrismaModule],

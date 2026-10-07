@@ -1,7 +1,7 @@
 import { UserRepositoryInterface } from '../../../domain/repositories/user.repository.interface.js';
 import { CreateUserInputInterface } from './create-user.input.interface.js';
 import { CreateUserOutputInterface } from './create-user.output.interface.js';
-import { PasswordHasherInterface } from '../../password-hasher.interface.js';
+import { PasswordHasherInterface } from '../../interfaces/password-hasher.interface.js';
 import { UserEntity } from '../../../domain/entities/user.entity.js';
 
 export class CreateUserUseCase {
